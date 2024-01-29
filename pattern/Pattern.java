@@ -58,6 +58,7 @@ public class Pattern {
 		System.out.println("-------pattern14----------");
 
 		pattern13(n);
+		System.out.println("-------pattern18----------");
 
 	}
 
