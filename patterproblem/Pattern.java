@@ -55,11 +55,10 @@ public class Pattern {
 
 		pattern12(n);
 
-		System.out.println("-------pattern13----------");
+		System.out.println("-------pattern14----------");
 
 		pattern13(n);
-		System.out.println("-------pattern14----------");
-		pattern14(n);
+		System.out.println("-------pattern15----------");
 	}
 
 	public static void pattern1(int n) {
@@ -351,30 +350,5 @@ public class Pattern {
 
 		}
 
-	}
-	public static void pattern14(int n){
-		for (int i = 0; i < N; i++)
-    {
-         
-        for (int j =0; j<N-i-1; j++)
-        {
-            System.out.print(" ");
-        }
-       
-         
-        for(int j=0;j< 2*i+1;j++){
-            
-            System.out.print("*");
-        }
-        
-         
-         for (int j =0; j<N-i-1; j++)
-        {
-            System.out.print(" ");
-        }
-       
-        System.out.println();
-    }
-}
 	}
 }
