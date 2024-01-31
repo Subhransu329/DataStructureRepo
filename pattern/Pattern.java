@@ -58,8 +58,16 @@ public class Pattern {
 		System.out.println("-------pattern13----------");
 
 		pattern13(n);
+		// 30-01-2024
 		System.out.println("-------pattern14----------");
 		pattern14(n);
+		// 31-01-2024
+		System.out.println("-------pattern15----------");
+		pattern15(n);
+		System.out.println("-------pattern16----------");
+		pattern16(n);
+		System.out.println("-------pattern17----------");
+		pattern17(n);
 	}
 
 	public static void pattern1(int n) {
@@ -294,13 +302,14 @@ public class Pattern {
 
 				System.out.print(j);
 
-			}// space
+			} // space
 
 			int space = 2 * (n - 1);
 
 			for (int j = 1; j <= space; j++) {
 
-				System.out.print(" ");}
+				System.out.print(" ");
+			}
 
 			// number
 			for (int j = i; j >= 1; j--) {
@@ -352,6 +361,7 @@ public class Pattern {
 		}
 
 	}
+
 	public static void pattern14(int n){
 		for (int i = 0; i < N; i++)
     {
@@ -375,6 +385,37 @@ public class Pattern {
        
         System.out.println();
     }
-}
+
+	public static void pattern15(int n) {
+		for (int i = 1; i <= n; i++) {
+			for (char ch = 'A'; ch <= 'A' + (n - i - 1); ch++) {
+				System.out.print(ch + " ");
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern16(int n) {
+		for (int i = 0; i <= n; i++) {
+
+			for (int j = 0; j <= i; j++) {
+				System.out.print((char) (int) ('A' + i));
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern17(int n) {
+		for (int i = 0; i <= n; i++) {
+			for (int j = 0; j <= n - i - 1; j++) {
+				System.out.print(" ");
+			}
+			int m = 1;
+			for (int k = 0; k <= i; k++) {
+				System.out.print(m++);
+
+			}
+			System.out.println();
+		}
 	}
 }
